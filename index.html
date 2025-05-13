@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Astrology Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="title">Free Astrology Prediction</h1>
+
+  <label>Name: <input type="text" id="name" /></label><br />
+  <label>Date of Birth: <input type="date" id="dob" /></label><br />
+  <label>Time of Birth: <input type="time" id="tob" /></label><br />
+  <label>Place of Birth: <input type="text" id="pob" /></label><br />
+
+  <label>Language:
+    <select id="lang">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+    </select>
+  </label><br />
+
+  <button onclick="getPrediction()">Get My Prediction</button>
+
+  <div id="output"></div>
+
+  <h2>Ask a Daily Question</h2>
+  <input type="text" id="question" placeholder="How will my day be?" />
+  <button onclick="askQuestion()">Ask</button>
+  <div id="answer"></div>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
